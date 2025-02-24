@@ -145,7 +145,7 @@ int a_star_search(int maze[ROW][COL], std::unique_ptr<Node> &start, std::unique_
 				if (d_row == 0 && d_col == 0) {
 					continue;
 				}
-				if (!hasDiagonals && ((d_row == 1 && d_col = 1) || (d_row == -1 && d_col = 1) || (d_row == 1 && d_col = -1) || (d_row == -1 && d_col = -1))) {
+				if (!hasDiagonals && ((d_row == 1 && d_col == 1) || (d_row == -1 && d_col == 1) || (d_row == 1 && d_col == -1) || (d_row == -1 && d_col == -1))) {
 					continue;
 				}
 				int neighbor_row = current_node->location.row + d_row;
